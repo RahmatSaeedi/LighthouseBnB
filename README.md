@@ -43,3 +43,8 @@
   - `reservation_id` : Foreign Key _`reservations(id)`_
   - `message`
   - `rating`
+# Migrations
+## [schema.sql](migrations/schema.sql)
+Creates `lightbnb` and switches to it.
+
+
