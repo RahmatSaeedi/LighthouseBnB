@@ -49,6 +49,24 @@
 
 # Migrations
 ## [schema.sql](migrations/schema.sql)
-Creates `lightbnb` and switches to it.
+Creates database `lightbnb` and switches to it.
 
+# Queries
+## [getUserByEmail.sql](queries/getUserByEmail.sql)
+Selects _id, name, email & password_ of a given user; here 'tristanjacobs@gmail.com'.
+```bash
+ id |     name      |          email          |   password
+----+---------------+-------------------------+--------------
+  1 | Devin Sanders | tristanjacobs@gmail.com |  $2a$10$FB...
+(1 row)
+```
 
+averageLengthOfReservations
+## [averageLengthOfReservations.sql](queries/averageLengthOfReservations.sql)
+the average duration of all reservations.
+```bash
+  average_duration   
+---------------------
+ 14.6636000000000000
+(1 row)
+```
