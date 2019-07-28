@@ -63,7 +63,7 @@ Selects _id, name, email & password_ of a given user; here 'tristanjacobs@gmail.
 
 averageLengthOfReservations
 ## [averageLengthOfReservations.sql](queries/averageLengthOfReservations.sql)
-the average duration of all reservations.
+Selects the average duration of all reservations.
 ```bash
   average_duration   
 ---------------------
