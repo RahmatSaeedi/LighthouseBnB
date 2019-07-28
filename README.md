@@ -7,6 +7,10 @@
   - `name`
   - `email`
   - `password`
+  
+- _`property_types`_
+  - `id`: Primary Key
+  - `type`
 
 - _`properties`_
   - `id`: Primary Key
@@ -16,6 +20,7 @@
   - `cover_photo_url`  
   - `owner_id` : Foreign Key _`users(id)`_
   - `cost_per_night`
+  - `country`
   - `street`
   - `city`
   - `province`
@@ -25,9 +30,6 @@
   - `number_of_washrooms`
   - `property_type` : Foreign Key _`property_types(id)`_
   - `active`
-- _`property_types`_
-  - `id`: Primary Key
-  - `type`
 
 - _`reservations`_
   - `id`: Primary Key
@@ -43,6 +45,8 @@
   - `reservation_id` : Foreign Key _`reservations(id)`_
   - `message`
   - `rating`
+
+
 # Migrations
 ## [schema.sql](migrations/schema.sql)
 Creates `lightbnb` and switches to it.
