@@ -28,7 +28,7 @@
   - `parking_spaces`
   - `number_of_bedrooms`
   - `number_of_washrooms`
-  - `property_type` : Optional, defaults to `1`, in future may reference to _`property_types(id)`_
+  - `property_type` : Optional, defaults to `1`, in future may references _`property_types(id)`_
   - `active`
 
 - _`reservations`_
@@ -41,7 +41,7 @@
 - _`property_reviews`_
   - `id`: Primary Key
   - `guest_id` : Foreign Key _`users(id)`_
-  - `owner_id` : Foreign Key _`users(id)`_
+  - `property_id` : Foreign Key _`properties(id)`_
   - `reservation_id` : Foreign Key _`reservations(id)`_
   - `message`
   - `rating`
@@ -70,3 +70,25 @@ Selects the average duration of all reservations.
  14.6636000000000000
 (1 row)
 ```
+
+## [listingsByCity.sql](queries/listingsByCity.sql)
+Shows all details about properties located in Vancouver including their average rating.
+
+
+```bash
+ id  |       title        | cost_per_night |   average_rating   
+-----+--------------------+----------------+--------------------
+ 224 | Nature bite        |          10526 | 4.1000000000000000
+ 197 | Build they         |          34822 | 4.1000000000000000
+  47 | Aside age          |          35421 | 4.2500000000000000
+ 149 | Present television |          53062 | 4.2222222222222222
+(4 rows)
+```
+## [listingsByCity.sql](queries/listingsByCity.sql)
+Shows all details about properties located in _Vancouver_ including their average rating.
+- Selects all columns from the properties table for properties located in _Vancouver_, and the average rating for each property.
+- Orders the results from lowest cost_per_night to highest cost_per_night.
+- Limits the number of results to 10.
+- Only shows listings that have a rating >= 4 stars.
+
+
