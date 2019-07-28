@@ -28,7 +28,7 @@
   - `parking_spaces`
   - `number_of_bedrooms`
   - `number_of_washrooms`
-  - `property_type` : Foreign Key _`property_types(id)`_
+  - `property_type` : Optional, defaults to `1`, in future may reference to _`property_types(id)`_
   - `active`
 
 - _`reservations`_
@@ -38,7 +38,7 @@
   - `property_id` : Foreign Key _`properties(id)`_
   - `guset_id` : Foreign Key _`users_id(id)`_
 
-- _`guest_reviews`_
+- _`property_reviews`_
   - `id`: Primary Key
   - `guest_id` : Foreign Key _`users(id)`_
   - `owner_id` : Foreign Key _`users(id)`_
