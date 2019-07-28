@@ -92,3 +92,15 @@ Shows all details about properties located in _Vancouver_ including their averag
 - Only shows listings that have a rating >= 4 stars.
 
 
+## [mostVisitedCities.sql](queries/mostVisitedCities.sql)
+Gets a list of the most visited cities.
+Selects the name of the city and the number of reservations for that city.
+```bash
+       city        | total_reservations 
+-------------------+--------------------
+ Carcross          |                405
+ Town of Hay River |                379
+ Whitehorse        |                376
+ Town of Inuvik    |                298
+ (251 rows)
+```
