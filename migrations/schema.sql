@@ -1,7 +1,3 @@
-\c postgres;
-DROP DATABASE IF EXISTS lightbnb;
-
-
 CREATE DATABASE lightbnb;
 \c lightbnb;
 
