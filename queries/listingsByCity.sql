@@ -5,4 +5,4 @@ WHERE city like '%ancouver%'
 GROUP BY properties.id
 HAVING avg(property_reviews.rating) >= 4
 ORDER BY cost_per_night ASC
-LIMIT 10
+LIMIT 10;
