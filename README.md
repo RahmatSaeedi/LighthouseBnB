@@ -104,3 +104,12 @@ Selects the name of the city and the number of reservations for that city.
  Town of Inuvik    |                298
  (251 rows)
 ```
+
+## [allMyPastReservations.sql](queries/allMyPastReservations.sql)
+Shows all past reservations for a user; in this case user with `users.id = 1`.
+- Selects all columns from the 
+    - reservations table,
+    - properties table
+    and the average rating of the property.
+- Orders the results from most recentto least recent.
+- Limits the results to 10.
