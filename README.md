@@ -1,6 +1,9 @@
 #
+A database application project developed as a part of _[Lighthouse Labs Web development](https://www.lighthouselabs.ca/web-bootcamp)_ course. The front-end is forked from [lighthouse-labs/LightBnB_WebApp](https://github.com/lighthouse-labs/LightBnB_WebApp)
 Install the LightBnB_WebApp `npm install`, run it `npm run local`, and view it at `localhost:3000`.
 
+#
+![search](docs\sql_search.gif)
 ## Project Structure
 * Setup related files
   * `docs` documentation info
@@ -76,7 +79,7 @@ Install the LightBnB_WebApp `npm install`, run it `npm run local`, and view it a
 ## [schema.sql](migrations/schema.sql)
 Creates database `lightbnb` and switches to it.
 
-# Queries
+# Sample Queries
 ## [getUserByEmail.sql](queries/getUserByEmail.sql)
 Selects _id, name, email & password_ of a given user; here 'tristanjacobs@gmail.com'.
 ```bash
