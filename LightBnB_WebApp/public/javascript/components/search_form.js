@@ -24,14 +24,14 @@ $(() => {
           <a id="search-property-form__cancel" href="#">Cancel</a>
       </div>
     </form>
-  `);
+  `)
   window.$searchPropertyForm = $searchPropertyForm;
 
   $searchPropertyForm.on('submit', function(event) {
     event.preventDefault();
     const data = $(this).serialize();
 
-    getAllListings(data).then(function(json) {
+    getAllListings(data).then(function( json ) {
       propertyListings.addProperties(json.properties);
       views_manager.show('listings');
     });

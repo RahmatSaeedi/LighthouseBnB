@@ -1,3 +1,6 @@
+#
+Install the LightBnB_WebApp `npm install`, run it `npm run local`, and view it at `localhost:3000`.
+
 ## Project Structure
 * Setup related files
   * `docs` documentation info
