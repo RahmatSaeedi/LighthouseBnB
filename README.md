@@ -3,7 +3,7 @@ A database application project developed as a part of _[Lighthouse Labs Web deve
 Install the LightBnB_WebApp `npm install`, run it `npm run local`, and view it at `localhost:3000`.
 
 #
-![search](docs\sql_search.gif)
+![search](docs/sql_search.gif)
 ## Project Structure
 * Setup related files
   * `docs` documentation info
